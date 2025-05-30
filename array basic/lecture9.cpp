@@ -1,37 +1,140 @@
-#include <iostream>
+// int arr[]={23,1,34,4,5};
+// print this arr 5 times
+ #include<iostream>
 using namespace std;
 
-void bubbleSort(int arr[], int n) {
-    for (int i = 0; i < n - 1; i++) {
-        bool swapped = false; // Optimization to stop early
-        for (int j = 0; j < n - i - 1; j++) {
-            if (arr[j] > arr[j + 1]) {
-                // Swap arr[j] and arr[j + 1]
-                swap(arr[j], arr[j + 1]);
-                swapped = true;
-            }
+int main() {
+    int arr[]={23,1,34,4,5};
+    
+    for(int i=0; i<5; i++)
+    {
+        for (int j=0; j<5; j++)
+        {
+            cout<<arr[j]<<" ";
         }
-        if (!swapped) break; // Stop if no swaps occurred in inner loop
+        cout<<endl;
     }
 }
 
-void printArray(int arr[], int n) {
-    for (int i = 0; i < n; i++)
-        cout << arr[i] << " ";
-    cout << endl;
-}
+// ________________________________________________________________________________
+// print arr like this
+// 23 1 34 4 5 
+// 23 1 34 4 
+// 23 1 34 
+// 23 1 
+// 23 
+
+#include<iostream>
+using namespace std;
 
 int main() {
-    int arr[] = {64, 25, 12, 22, 11};
-    int n = sizeof(arr) / sizeof(arr[0]);
+    int arr[]={23,1,34,4,5};
+    
+    for(int i=0; i<5; i++)
+    {
+        for(int j=0; j<5-i; j++)
+        {
+            cout<<arr[j]<<" ";
+        }
+        cout<<endl;
+    }
+    
+    }
+// ************************************************************
+ 
+// 23 1 34 4 5 
+// 1 34 4 5 
+// 34 4 5 
+// 4 5 
+// 5 
 
-    cout << "Original array: ";
-    printArray(arr, n);
+#include<iostream>
+using namespace std;
 
-    bubbleSort(arr, n);
+int main() {
+    int arr[]={23,1,34,4,5};
+    
+   for(int i=0; i<5; i++)
+   {
+       for( int j=i ; j<5; j++)
+       {
+           cout<<arr[j]<<" ";
+       }
+       cout<<endl;
+   }
+    
+    }
 
-    cout << "Sorted array: ";
-    printArray(arr, n);
+// __________________________________________________________________________________________
+// print arr in reverse order
+// 5 4 34 1 23 
+// 5 4 34 1 23 
+// 5 4 34 1 23 
+// 5 4 34 1 23
+// 5 4 34 1 23
 
-    return 0;
+#include<iostream>
+using namespace std;
+
+int main() {
+    int arr[]={23,1,34,4,5};
+    
+   for(int i=0; i<5; i++)
+   {
+       for(int j=4; j>=0; j--)
+       {
+           cout<<arr[j]<<" ";
+       }
+       cout<<endl;
+   }
+    
+}
+
+
+// 5 4 34 1 23 
+// 4 34 1 23 
+// 34 1 23 
+// 1 23 
+// 23 
+
+// _____________________________________________________________________
+#include<iostream>
+using namespace std;
+
+int main() {
+    int arr[]={23,1,34,4,5};
+    
+    for(int i=0; i<5; i++)
+    {
+        for(int j=4-i; j>=0; j--)
+        {
+            cout<<arr[j]<<" ";
+        }
+        cout<<endl;
+    }
+    
+}
+
+// _________________________________________
+// 23 1 34 4 5 
+// 23 1 34 4 
+// 23 1 34 
+// 23 1 
+// 23 
+
+#include<iostream>
+using namespace std;
+
+int main() {
+    int arr[]={23,1,34,4,5};
+    
+    for(int i=0; i<5; i++)
+    {
+        for(int j=0; j<5-i; j++)
+        {
+            cout<<arr[j]<<" ";
+        }
+        cout<<endl;
+    }
+    
 }
