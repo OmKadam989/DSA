@@ -101,9 +101,17 @@ void printList(Node * head)
 };
 
 int main() {
+    Node * head= NULL;
     int arr[] = {23,2,3,222,34};
     int size=5;
-    Node * head=createLinked(arr,size,0);
+    head=createLinked(arr,size,0);
+
+    if(head != NULL)
+    {
+        Node * temp = head;
+        head = head ->next;
+        delete temp;
+    }
     
     printList(head);
     
