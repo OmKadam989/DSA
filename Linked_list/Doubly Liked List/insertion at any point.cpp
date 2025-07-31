@@ -33,6 +33,18 @@ int main () {
             curr = temp;
         }
     }
+    int pos =3;
+    Node * cur=head;
+    while(--pos)
+    {
+        cur = cur->next;
+    }
+    Node * temp = new Node(10);
+    temp->next = cur->next;
+    temp->prev = cur;
+    cur->next = temp;
+    temp->next->prev = temp;
+    
     Node * print = head;
     while(print)
     {
@@ -41,3 +53,4 @@ int main () {
     }
     
 }
+
