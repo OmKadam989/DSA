@@ -47,7 +47,6 @@ Welcome to my personal repository where I document and practice **Data Structure
 ## 🤝 Let's Connect
 
 - 💼 [LinkedIn](https://www.linkedin.com/in/omkadam989/)
-- 🌐 [Portfolio (if available)](https://yourportfolio.com)
 - 📬 Feel free to `Star` this repo if you find it useful!
 
 ---
